@@ -1,4 +1,5 @@
 (ns cljds.ch9.data
+  (:refer-clojure :exclude [update])
   (:require [incanter.datasets :as d]
             [incanter.core :as i]
             [incanter.stats :as s]

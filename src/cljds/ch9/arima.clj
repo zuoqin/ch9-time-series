@@ -77,7 +77,7 @@
     (-> (c/bar-chart xs ys
                      :x-label "Lag"
                      :y-label "Value")
-        (svg/save-svg "/tmp/9-364.svg"))))
+        (svg/save-svg "E:/DEV/clojure/datascience/ch9-time-series/tmp/9-364.svg"))))
 
 (defn difference
   ([series]
