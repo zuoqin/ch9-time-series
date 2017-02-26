@@ -43,3 +43,19 @@ The partial autocorrelation function (PACF) aims to address the issue of spottin
 ### Removing seasonality with differencing
 
 ### Maximum likelihood estimation
+
+### Estimating the maximum likelihood
+
+The number of parameters to our ARMA model is large, and so to determine the maximum likelihood we're going to use an optimization method that performs well in high-dimensional spaces. The method is called the Nelder-Mead, or simplex,
+method.
+
+### Nelder-Mead optimization with [Apache Commons Math](http://commons.apache.org/proper/commons-math/userguide/optimization.html) Apache Commons Math
+
+### Identifying better models with Akaike Information Criterion
+
+### Time series forecasting
+
+### Forecasting with Monte Carlo simulation
+
+The Monte Carlo method was developed and used systematically during the Manhattan Project, the American World War II effort to
+develop nuclear weapons. John Von Neumann and Stanislaw Ulam suggested it as a means to investigate properties of neutron travel through radiation shielding and named the method after the Monte Carlo Casino in Monaco.
