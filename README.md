@@ -8,24 +8,38 @@ This chapter makes use of two datasets: the [Longley](http://www.itl.nist.gov/di
 
 Both datasets are included with the Incanter library.
 
-## Running examples
+### Fitting curves with a linear model
 
-Examples can be run with:
+1. Add the year squared as a parameter, in addition to the year
+2. The curve fits the data quite well, with an R2 of over 0.97. However, it should come as no surprise to you now to discover that we are overfitting the data. The model we have built is unlikely to have very much forecasting power. In fact, if we extend the range of the chart to the right, as we do with ex-9-8 to show predictions into the future, we obtain that just two-and-a-half years after the last measured data point, our model is predicting that the military will grow more than 500 percent
 
-```bash
-# Replace 9.1 with the example you want to run:
+### Time series decomposition
 
-lein run -e 9.1
-```
-or open an interactive REPL with:
+1. Trend
+2. Seasonality
+3. Cycles
 
-```bash
-lein repl
-```
+### De-trending and differencing
 
-## License
+### Discrete time models
 
-Copyright © 2015 Henry Garner
+### Autoregressive models
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+### Determining autocorrelation in AR models
+
+### Moving-average models
+
+### Combining the AR and MA models
+
+### Calculating partial autocorrelation
+
+The partial autocorrelation function (PACF) aims to address the issue of spotting cyclic components in a hybrid ARMA model. It's defined as the correlation coefficient between yt and yt+k given all the in-between observations. In other words, it's the autocorrelation at lag k that isn't already accounted for by lags 1 through k-1.
+
+### Autocovariance
+
+### PACF with Durbin-Levinson recursion
+
+
+### Removing seasonality with differencing
+
+### Maximum likelihood estimation
